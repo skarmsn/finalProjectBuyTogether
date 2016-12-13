@@ -7312,3 +7312,8 @@ button.close {
 .thead_tr {
 	text-align: center
 }
+
+/* 회원가입 창 수정 */
+.c-layout-page {
+	font-size: 30px;
+}

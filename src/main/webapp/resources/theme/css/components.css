@@ -12356,3 +12356,8 @@ h1 {
 .item span {
     font-style: normal;
 }    
+
+/* 회원가입 창 수정 */
+.c-layout-page {
+	font-size: 30px;
+}
