@@ -313,7 +313,8 @@ label.control-label {
 .btn-default {
   color: #99a5b9;
   background: #ffffff;
-  border-color: #e1e6ee; }
+  border-color: #e1e6ee;
+  margin:0 auto; }
   .btn-default.btn-no-focus:focus,
   .btn-default.btn-no-focus.focus {
     color: #99a5b9;

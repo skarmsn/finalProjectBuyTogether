@@ -691,12 +691,12 @@ h1 {
   color: #d05163 !important; }
 
 .c-font-yellow {
-  color: #FF6B57 !important; }
+  color: #ecec00!important; }
   .c-font-yellow small {
-    color: #FF6B57 !important; }
+    color: #ecec00 !important; }
 
 .c-font-yellow-hover:hover {
-  color: #FF6B57 !important; }
+  color: #ecec00 !important; }
 
 .c-font-yellow-1 {
   color: #c8d046 !important; }
@@ -2824,7 +2824,7 @@ h1 {
             left: 0;
             right: auto; }
         .c-layout-header .c-navbar .c-mega-menu > .nav.navbar-nav > li .dropdown-menu {
-          box-shadow: none; }
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075); }
           .c-layout-header .c-navbar .c-mega-menu > .nav.navbar-nav > li .dropdown-menu > li > h3 {
             margin: 0;
             letter-spacing: 1px;

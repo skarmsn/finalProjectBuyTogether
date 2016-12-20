@@ -6372,7 +6372,11 @@ button.close {
   right: 0;
   bottom: 0;
   left: 0;
+<<<<<<< HEAD
   z-index: 9999;
+=======
+  z-index: 1040;
+>>>>>>> refs/remotes/origin/join
   display: none;
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
@@ -6485,6 +6489,10 @@ button.close {
     width: 900px;
   }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> refs/remotes/origin/join
 .tooltip {
 	position: absolute;
 	z-index: 1070;
@@ -7288,4 +7296,9 @@ button.close {
 
 .thead_tr {
 	text-align: center
+}
+
+/* 회원가입 창 수정 */
+.c-layout-page {
+	font-size: 30px;
 }
