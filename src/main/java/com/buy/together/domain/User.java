@@ -12,7 +12,7 @@ public class User {
    private String phone_number;
    private Date birthdate;
    private String gender;
-   private String nickName;
+   private String nickname;
    private String profile;
    private String region;
    private int reputation;
@@ -85,12 +85,12 @@ public class User {
       this.gender = gender;
    }
 
-   public String getNickName() {
-      return nickName;
+   public String getNickname() {
+      return nickname;
    }
 
-   public void setNickName(String nickName) {
-      this.nickName = nickName;
+   public void setNickname(String nickname) {
+      this.nickname = nickname;
    }
 
    public String getProfile() {
