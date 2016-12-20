@@ -28,7 +28,6 @@ import com.buy.together.domain.Category;
 import com.buy.together.domain.HuntingType;
 import com.buy.together.dto.BuyTogetherDTO;
 import com.buy.together.service.BuyTogetherService;
-import com.buy.together.util.UploadFileUtils;
 
 @RestController
 @RequestMapping("/restBuytogether/*")
@@ -100,8 +99,8 @@ public class BuyTogetherRestController {
 		HttpSession session = request.getSession();
 		String uploadPath = session.getServletContext().getRealPath("/") + "/resources/upload";
 		
-		return new ResponseEntity<>(UploadFileUtils.uploadFile(uploadPath, file.getOriginalFilename(), file.getBytes()),HttpStatus.CREATED);
-
+		//return new ResponseEntity<>(UploadFileUtils.uploadFile(uploadPath, file.getOriginalFilename(), file.getBytes()),HttpStatus.CREATED);
+		return new ResponseEntity<String>("success",HttpStatus.OK);
 	}
 	
 	@ResponseBody
