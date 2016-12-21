@@ -37,6 +37,15 @@ $(document).ready(function() {
 		
 	});
 	
+	//찜목록 버튼 클릭 시 찜목록 화면으로 이동
+	$('#dipListBtn').on("click", function(event) {
+		
+		localStorage.clear();
+		sessionStorage.clear();
+		document.location = "/user/dipList";
+		
+	});
+	
 	function showLoginBtn () {
 		
 		$('#loginBtn').css({display:'block'});

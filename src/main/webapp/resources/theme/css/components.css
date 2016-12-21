@@ -5164,11 +5164,11 @@ h1 {
   .c-layout-breadcrumbs-1.c-subtitle {
     padding: 30px 0; }
     .c-layout-breadcrumbs-1.c-subtitle .c-page-breadcrumbs {
-      margin-top: 10px; }
+      margin-top: 0px; }
   .c-layout-breadcrumbs-1.c-bgimage {
     padding: 80px 0; }
     .c-layout-breadcrumbs-1.c-bgimage .c-page-breadcrumbs {
-      margin-top: 10px; }
+      margin-top: 0px; }
   .c-layout-breadcrumbs-1.c-bgimage-full {
     padding: 200px 0 100px; }
     .c-layout-breadcrumbs-1.c-bgimage-full .c-breadcrumbs-wrapper {
@@ -5176,7 +5176,7 @@ h1 {
       padding: 10px 0;
       margin-bottom: 30px; }
     .c-layout-breadcrumbs-1.c-bgimage-full .c-page-breadcrumbs {
-      margin-top: 10px; }
+      margin-top: 0px; }
     .c-layout-breadcrumbs-1.c-bgimage-full.c-centered {
       text-align: center; }
       .c-layout-breadcrumbs-1.c-bgimage-full.c-centered .c-breadcrumbs-wrapper {
@@ -11408,7 +11408,8 @@ h1 {
     .c-shop-cart-page-1 > .c-cart-table-row > .c-cart-image > img {
       width: 65%; }
   .c-shop-cart-page-1 > .c-cart-table-row > .c-cart-desc h3 {
-    margin-top: 0; }
+    margin-top: 10px;
+    margin-bottom: 0px; }
   .c-shop-cart-page-1 > .c-cart-table-row > .c-cart-remove > .c-cart-remove-desktop {
     line-height: 1em;
     font-size: 24px; }

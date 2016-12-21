@@ -13,19 +13,19 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 @RequestMapping("/user")
-public class CartListController {
+public class DipListController {
 	
 	@Inject
 	private static final Logger logger = LoggerFactory.getLogger(JoinController.class);
 
 	//회원가입
-	@RequestMapping(value ="/cartList", method = RequestMethod.GET)
+	@RequestMapping(value ="/dipList", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) throws Exception {
 
-		System.out.println("user/cartList");
+		System.out.println("user/dipList");
 		logger.info("Welcome home! The client locale is {}.", locale);
 
-		return "/views/user/cartList";
+		return "/views/user/dipList";
 		
 	}
 
