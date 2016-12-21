@@ -60,7 +60,8 @@ function userInfoDao() {
 		
 		jQuery.ajaxSettings.traditional = true; //jquery 1.3 version 사용 시
 		
-		userDTO.user_number = sessionStorage.getItem("user_number");
+		userDTO.user_number = sessionStorage.getItem("number");
+		
 		//서버에 필수 정보 등록 결과 요청
 		$.ajax({
 			type: 'post',
@@ -78,6 +79,30 @@ function userInfoDao() {
 		
 		return result;
 		
+	};
+	
+	//회원 탈퇴 dao
+	this.removeDao = function(user) {
+		
+		var result;
+
+		//서버에 회원 탈퇴 결과 요청
+		$.ajax({
+			type: 'post',
+			url: '/restUser/remove',	
+			headers: { 
+				"Content-Type": "application/json",
+				"X-HTTP-Method-Override": "POST" },
+			data: JSON.stringify(user),
+			dataType: 'text',
+			async : false,	
+			success:function(data){	
+				result = data;
+			}
+		});
+		
+		return result;
+		 
 	};
 	
 }

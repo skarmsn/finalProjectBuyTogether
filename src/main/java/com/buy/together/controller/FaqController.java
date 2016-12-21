@@ -18,9 +18,6 @@ public class FaqController {
 	@RequestMapping(value ="/faq", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 
-		System.out.println("customerCenter/faq");
-		logger.info("Welcome home! The client locale is {}.", locale);
-
 		return "/views/customerCenter/faq";
 	}
 

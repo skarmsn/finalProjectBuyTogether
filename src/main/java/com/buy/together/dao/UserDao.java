@@ -16,4 +16,10 @@ public interface UserDao {
 	
 	public void registInterest(Interest interest) throws Exception;
 	
+	public User readEUser(User user) throws Exception;
+	
+	public User readBUser(User user) throws Exception;
+	
+	public void delete(int user_number) throws Exception;
+	
 }

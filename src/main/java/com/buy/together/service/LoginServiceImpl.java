@@ -39,10 +39,9 @@ public class LoginServiceImpl implements LoginService {
 		User userLogin;
 		Admin adminLogin;
 		LoginDTO userInfo = null;
-		
+
         String shaPass = sha.getSha256(user.getPw().getBytes());
         user.setPw(shaPass);
-        System.out.println(shaPass);
         
 		userLogin = loginDao.buyTogetherUserLogin(user);
 		
@@ -58,8 +57,8 @@ public class LoginServiceImpl implements LoginService {
 			} 
 			
 		} else { //같이사냥 회원이 로그인 했다면,
-			
-			userInfo = new LoginDTO(user.getUser_number(), user.getId(), user.getPw());
+
+			userInfo = new LoginDTO(userLogin.getUser_number(), userLogin.getId(), userLogin.getPw());
 			
 		}
 		

@@ -14,20 +14,38 @@
 		from admin
 		where admin_nickname = #{nickname}
 	</select>
+	<!-- 회원 닉네임 등록 -->
 	<update id="registNickname">
 		update user
 		set nickname = #{nickname}
 		where user_number = #{user_number}
 	</update>
-
+	<!-- 회원 관심 지역 등록 -->
 	<insert id="registUserAddress">
-		insert into useraddress (user_sido, user_sigungu, user_dong, user_number) 
-		values (#{user_sido}, #{user_sigungu}, #{user_dong}, #{user_number})
+		insert into useraddress (user_sido, user_sigungu, user_number) 
+		values (#{user_sido}, #{user_sigungu}, #{user_number})
 	</insert>
-	
+	<!-- 회원 관심 카테고리 등록 -->
 	<insert id="registInterest">
 		insert into interest (user_number, category_number) 
 		values (#{user_number}, #{category_number})
 	</insert>
-	
+	<!-- 같이사냥 user_number & pw 타당성 체크 -->
+	<select id="readBUser" resultType="User">
+		select *
+		from user
+		where user_number = #{user_number} and pw = #{pw}
+	</select>
+	<!-- 페이스북/네이버 user_number email 타당성 체크 -->
+	<select id="readEUser" resultType="User">
+		select *
+		from user
+		where user_number = #{user_number} and email = #{email}
+	</select>
+	<!-- 같이사냥 회원 탈퇴 -->
+	<delete id="delete">
+		delete
+		from user
+		where user_number = #{user_number}
+	</delete>
 </mapper>

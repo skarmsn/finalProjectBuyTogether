@@ -1,5 +1,10 @@
 /* customize bootstrap css */
 
+/*회원탈퇴 alert */
+.alert-danger > span {
+	margin-left: 80px;
+}
+
 /* 페이스북 버튼 */
 .btn-facebook {
 	color: #fff;

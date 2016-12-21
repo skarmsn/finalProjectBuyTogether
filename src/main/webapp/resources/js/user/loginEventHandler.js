@@ -36,24 +36,32 @@ $(document).ready(function() {
 
 	});
 	
-	//로그인 버튼 클릭 시
+/*	//로그인 버튼 클릭 시
 	$('#close').on("click", function() {
 		
 		$('.c-layout-header-fixed').removeClass('modal-open');
+		//$('#modal').css({'aria-hidden' : 'true'});
 		$('#modal').css({'display' : 'none'});
-
-	});
+		//$('#modal').removeClass('in');
+		
+	});*/
 	
 	//모달 실행
 	function modal(message) {
 		
-		$('.c-layout-header-fixed').addClass('modal-open');
+/*		$('.c-layout-header-fixed').addClass('modal-open');
+		$(".modal-body").children("p").removeClass();
+		$(".modal-body").children("p").addClass(message[0]);
+		$("#msg").children("span").text(message[1]);
+		$('#modal').css({'transition' : 'linear'});
 		$('#modal').css({'display' : 'block'});
+		//$('#modal').modal({'show' : true});
+		
+*/		
 		$(".modal-body").children("p").removeClass();
 		$(".modal-body").children("p").addClass(message[0]);
 		$("#msg").children("span").text(message[1]);
 		$('#modal').modal({'show' : true});
-		
 	}
 	
 	//로그인 상태 유지 체크

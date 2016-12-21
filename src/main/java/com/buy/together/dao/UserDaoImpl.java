@@ -56,4 +56,28 @@ public class UserDaoImpl implements UserDao {
 		
 	}
 	
+	//회원 정보 DB 요청
+	@Override
+	public User readBUser(User user) throws Exception {
+		
+		return sqlSession.selectOne(namespace + ".readBUser", user);
+		
+	}
+
+	//회원 정보 DB 요청
+	@Override
+	public User readEUser(User user) throws Exception {
+		
+		return sqlSession.selectOne(namespace + ".readEUser", user);
+		
+	}
+	
+	//회원 정보 DB 삭제
+	@Override
+	public void delete(int user_number) throws Exception {
+		
+		sqlSession.insert(namespace + ".delete", user_number);
+		
+	}
+	
 }

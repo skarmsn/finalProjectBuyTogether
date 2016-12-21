@@ -33,7 +33,7 @@ public class LoginRestController {
 
 		ResponseEntity<LoginDTO> entity = null;
 		LoginDTO userInfo = null;
-		
+
 		try {
 			userInfo = loginService.buyTogetherLogin(user);
 			entity = new ResponseEntity<LoginDTO>(userInfo, HttpStatus.OK); // HttpStatus.OK == 200

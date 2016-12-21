@@ -10,45 +10,48 @@
 		<!-- select b.board_number, b.board_title , b.board_content from board 
 			b, boardtype bt where bt.board_name="FaQ" and bt.board_type_number = b.board_number; -->
 
-		select board_number, board_title, board_content 
-		from board 
+		select board_number, board_title, board_content
+		from board
 		where board_type_number = 2;
 
 	</select>
 
 	<select id="faqUserList" resultType="Board">
 
-		select board_title, board_content 
-		from board 
+		select board_title,
+		board_content
+		from board
 		where board_title like concat('%','[회원관련]', '%');
 
 	</select>
 
 	<select id="faqBuyList" resultType="Board">
 
-		select board_title, board_content 
-		from board 
+		select board_title,
+		board_content
+		from board
 		where board_title like concat('%', '[사냥관련]', '%');
-		
+
 	</select>
 
 	<select id="faqInfoList" resultType="Board">
 
-		select board_title,	board_content 
-		from board 
+		select board_title,
+		board_content
+		from board
 		where board_title like concat('%', '[정보관련]','%');
 
 	</select>
 
 	<select id="faqCenterList" resultType="Board">
 
-		select board_title, board_content 
-		from board 
+		select board_title,
+		board_content
+		from board
 		where board_title like concat('%', '[고객센터]', '%');
 
 	</select>
 
-	
 </mapper>
 
 

@@ -5,17 +5,15 @@ public class UserAddress {
 	private int user_address_number;
 	private String user_sido;
 	private String user_sigungu;
-	private String user_dong;
 	private int user_number;
 
 	public UserAddress() {
 		
 	}
 	
-	public UserAddress(String user_sido, String user_sigungu, String user_dong, int user_number) {
+	public UserAddress(String user_sido, String user_sigungu,int user_number) {
 		this.user_sido = user_sido;
 		this.user_sigungu = user_sigungu;
-		this.user_dong = user_dong;
 		this.user_number = user_number;
 	}
 
@@ -41,14 +39,6 @@ public class UserAddress {
 
 	public void setUser_sigungu(String user_sigungu) {
 		this.user_sigungu = user_sigungu;
-	}
-
-	public String getUser_dong() {
-		return user_dong;
-	}
-
-	public void setUser_dong(String user_dong) {
-		this.user_dong = user_dong;
 	}
 
 	public int getUser_number() {

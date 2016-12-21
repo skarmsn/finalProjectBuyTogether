@@ -1,10 +1,17 @@
 $(document).ready(function() {
 	
 	var sessionId  = sessionStorage.getItem("id"); //세선에 저장된 아이디 조회
+	var url = window.location.pathname;
 	
 	if(sessionId == null && localStorage.getItem("id") == null) { //로그인 기록이 없다면,
 
 		showLoginBtn(); //로그인, 회원가입 버튼 표시
+		
+		if(url == "/login/basicUserInfo" || url == "/user/Esignout" || url == "/user/Bsignout"){
+
+			document.location = "/login";
+			
+		}
 		
 	} else {
 		
@@ -37,6 +44,7 @@ $(document).ready(function() {
 		
 	});
 	
+	//로그인,회원가입 버튼 출력
 	function showLoginBtn () {
 		
 		$('#loginBtn').css({display:'block'});
@@ -46,6 +54,7 @@ $(document).ready(function() {
 		
 	};
 	
+	//환영 멘트, 로그아웃 버튼 출력
 	function showLogoutBtn () {
 		
 		$('#loginBtn').css({display:'none'});

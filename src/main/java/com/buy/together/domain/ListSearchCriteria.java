@@ -8,6 +8,7 @@ public class ListSearchCriteria extends Criteria {
 	private String buytogether_address_sido;
 	private String buytogether_address_sigungu;
 	private int regDate;
+	private int user_number;
 	private String searchType;
 	private String keyword;
 
@@ -49,6 +50,14 @@ public class ListSearchCriteria extends Criteria {
 
 	public void setBuytogether_address_sigungu(String buytogether_address_sigungu) {
 		this.buytogether_address_sigungu = buytogether_address_sigungu;
+	}
+	
+	public int getUser_number() {
+		return user_number;
+	}
+
+	public void setUser_number(int user_number) {
+		this.user_number = user_number;
 	}
 
 	public int getRegDate() {

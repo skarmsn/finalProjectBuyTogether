@@ -33,17 +33,17 @@ public class BuyTogetherDaoImpl implements BuyTogetherDao {
 	}
 	
 	@Override//같이사냥 리스트
-	public List<BuyTogetherDTO> searchBuyTogetherList(ListSearchCriteria cri) throws Exception {
+	public List<BuyTogetherDTO> searchBuyTogetherMapList(ListSearchCriteria cri) throws Exception {
 		
-		return sqlSession.selectList(namespace+".searchBuyTogetherList", cri);
+		return sqlSession.selectList(namespace+".searchBuyTogetherMapList", cri);
 		
 	}
 
 	
 	@Override //같이사냥 전체 게시글 조회
-	public List<BuyTogetherDTO> buyTogetherList(MySearchCriteria cri) throws Exception {
+	public List<BuyTogetherDTO> searchBuyTogetherList(ListSearchCriteria cri) throws Exception {
 
-		return sqlSession.selectList(namespace+".buyTogetherList",cri);
+		return sqlSession.selectList(namespace+".searchBuyTogetherList",cri);
 			
 	}
 	
@@ -95,5 +95,4 @@ public class BuyTogetherDaoImpl implements BuyTogetherDao {
 		sqlSession.insert(namespace+".buytogetherPhotoInsert", attachedPhoto);
 		
 	}
-	
 }

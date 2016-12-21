@@ -45,9 +45,10 @@
   .cbp > * {
     visibility: hidden; }
   .cbp .cbp-item {
-    position: absolute;
+    position: inherit;
     top: 0;
     left: 0;
+    /* width: 350px; */
     list-style-type: none;
     margin: 0;
     padding: 0;
